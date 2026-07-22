@@ -1,0 +1,67 @@
+
+<!-- TELA ADMIN -->
+
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastrar Produto</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div class="topo-admin">
+            <h1>Cadastrar Produto</h1>
+            <a href="admin.html" class="btn btn-cinza">Voltar</a>
+        </div>
+
+        <div class="form-container">
+            <div class="mensagem" id="mensagem"></div>
+
+            <form id="formCadastro">
+                <div class="form-grupo">
+                    <label for="nome">Nome do Produto</label>
+                    <input type="text" id="nome" required />
+                </div>
+
+                <div class="form-grupo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" required></textarea>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="fotos">URL da Foto</label>
+                    <input
+                        type="text"
+                        id="fotos"
+                        placeholder="https://..."
+                        required
+                    />
+                </div>
+
+                <div class="form-grupo">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" step="0.01" required />
+                </div>
+
+                <div class="form-grupo">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="comida">Comida</option>
+                        <option value="bebida">Bebida</option>
+                        <option value="salgados">Salgados</option>
+                        <option value="sobremesa">Sobremesa</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-verde">Cadastrar</button>
+            </form>
+        </div>
+    </body>
+    <!-- JS -->
+    <script src="./config.js"></script>
+    <script src="./js/cadastro.js"></script>
+</html>

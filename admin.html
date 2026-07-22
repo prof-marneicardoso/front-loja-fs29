@@ -1,0 +1,42 @@
+
+<!-- TELA ADMIN -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Produtos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="topo-main">
+        <h1>Gerenciar Produtos</h1>
+        <a href="./cadastro.html" class="btn btn-verde">
+            + Cadastrar Produto
+        </a>
+    </div>
+
+    <!-- Lista de produtos da Minha Loja -->
+    <table>
+        <thead>
+            <!-- Cabeçalho -->
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody id="corpoTabela">
+            <!-- As linhas serão inseridas aqui pelo JS -->
+        </tbody>
+    </table>
+</body>
+<!-- JS -->
+ <script src="./config.js"></script>
+<script src="./js/admin.js"></script>
+</html>
