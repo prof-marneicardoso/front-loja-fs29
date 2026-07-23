@@ -4,4 +4,4 @@
 // const API_URL = "http://localhost:3000";
 
 // Servidor rodando no Render (em Produção)
-const API_URL = "https://api-loja-66ig.onrender.com/";
+const API_URL = "https://api-loja-66ig.onrender.com";
