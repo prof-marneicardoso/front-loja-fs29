@@ -7,7 +7,8 @@ async function carregarProdutos() {
     try {
         // Faz a requisição GET para a API
         const resposta = await fetch(`${API_URL}/produtos`);
-        const produtos = await resposta.json();
+        const resultado = await resposta.json();
+        const produtos = resultado.dados;
 
         // Se não houver produtos
         if (produtos.length === 0) {

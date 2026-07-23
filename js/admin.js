@@ -6,7 +6,8 @@ async function carregarTabela() {
 
     try {
         const resposta = await fetch(`${API_URL}/produtos`);
-        const produtos = await resposta.json();
+        const resultado = await resposta.json();
+        const produtos = resultado.dados;
 
         if (produtos.length === 0) {
             corpo.innerHTML = `<tr><td colspan="4">Nenhum produto cadastrado.</td></tr>`;
