@@ -5,7 +5,8 @@ async function carregarTabela() {
     const corpo = document.getElementById("corpoTabela");
 
     try {
-        const resposta = await fetch(`${API_URL}/produtos`);
+        // const resposta = await fetch(`${API_URL}/produtos`);
+        const resposta = await fetch(`${API_URL}`);
         const resultado = await resposta.json();
         const produtos = resultado.dados;
 
